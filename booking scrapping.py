@@ -34,7 +34,7 @@ for i in range(len(hotel_names)):
 #7th step create csv file and fill with values
 file_list=[hotel_name,hotel_price,hotel_review]
 exported=zip_longest(*file_list)
-with open("F:\Collage\Fourth year\web scrapping project/test22.csv","w")as myfile:
+with open("booking_test.csv","w")as myfile:
     wr=csv.writer(myfile)
     wr.writerow(['hotels names','hotels prices','hotel reviews'])
     wr.writerows(exported)
